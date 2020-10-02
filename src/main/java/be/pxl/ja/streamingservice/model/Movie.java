@@ -6,7 +6,7 @@ public class Movie extends Content implements Playable {
     private String title;
     private String director;
     private LocalDate releaseDate;
-    private int duration;
+    private String  duration;
     private Genre genre;
     private Rating maturityRating;
 
@@ -39,7 +39,7 @@ public class Movie extends Content implements Playable {
         this.releaseDate = releaseDate;
     }
 
-    public int getDuration() {
+    public String getPlayingTime() {
         return duration;
     }
 
@@ -53,7 +53,7 @@ public class Movie extends Content implements Playable {
         System.out.println("Pausing " + this);
     }
 
-    public void setDuration(int duration) {
+    public void setPlayingTime(String duration) {
         this.duration = duration;
     }
 

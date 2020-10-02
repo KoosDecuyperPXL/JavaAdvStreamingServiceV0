@@ -1,7 +1,7 @@
 package be.pxl.ja.streamingservice.model;
 
 public interface Playable {
-    int getDuration();
+    String getPlayingTime();
     void play();
     void pause();
 }
